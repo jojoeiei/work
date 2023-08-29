@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EventController">
+   <children>
+      <Button layoutX="406.0" layoutY="40.0" mnemonicParsing="false" onAction="#eventsBtnClick" text="All Events">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="526.0" layoutY="40.0" mnemonicParsing="false" onAction="#profileBtnClick" text="Profile">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="eventNameLabel" layoutX="212.0" layoutY="43.0" text="EventNameLabel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="eventImageView" fitHeight="400.0" fitWidth="700.0" layoutX="212.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="212.0" AnchorPane.rightAnchor="212.0">
+         <image>
+            <Image url="@../../../images/samplePic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="212.0" layoutY="520.0" text="Date :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="dateLabel" layoutX="280.0" layoutY="520.0" text="dateLabel">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="212.0" layoutY="555.0" text="Seat :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="seatLabel" layoutX="280.0" layoutY="555.0" text="seatLabel">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="212.0" layoutY="590.0" text="Detail : ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="detailLabel" layoutX="280.0" layoutY="590.0" text="detailLabel">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="212.0" layoutY="625.0" text="Registeration End :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="registerDayLabel" layoutX="370.0" layoutY="625.0" text="registerDayLabel">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="370.0" layoutY="655.0" mnemonicParsing="false" text="Join With Team">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="211.0" layoutY="697.0" mnemonicParsing="false" onAction="#joinBtnClick" text="Join Individual">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="teamNameLabel" layoutX="212.0" layoutY="661.0" text="TeamNameLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
